@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="6133507b-19e7-1e82-6fc7-422aa6c4b21f">
+    <mxGraphModel dx="2883" dy="1735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-39" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;opacity=20;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="40" width="560" height="881" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-40" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#99FF99;opacity=20;" parent="1" vertex="1">
+          <mxGeometry x="410" y="60" width="460" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="78961159f06e98e8-17" value="Raw Data Claims&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="10" y="20" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="78961159f06e98e8-23" value="Claims von API (given) with labels and relevant snippets&amp;nbsp; from the human fact checker (gold truth)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-17" vertex="1">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="QW1ojJMR4eeIhC1YiXe4-1" target="QW1ojJMR4eeIhC1YiXe4-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-1" value="Raw Data Evidence" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="20" y="330" width="200" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-2" value="Full Evidence corpus (snippets) from web Search - cleaned and deduplicated ~ 420k snippets&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;* Full evidence corpus is available for download. This is then &lt;i&gt;corpus_evidence_unified.json&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="QW1ojJMR4eeIhC1YiXe4-1" vertex="1">
+          <mxGeometry y="26" width="200" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="QW1ojJMR4eeIhC1YiXe4-4" target="QW1ojJMR4eeIhC1YiXe4-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-4" value="Data Processing" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="220" y="80" width="150" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-5" value="Claims get broken down with ClaimDecomp using ChatGPT-&amp;gt; inflate the dataset and helps later on (we should do that)&lt;br&gt;* Seems we get to 3 decomposed claims&lt;br&gt;* Prompt is available" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="QW1ojJMR4eeIhC1YiXe4-4" vertex="1">
+          <mxGeometry y="26" width="150" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.771;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="78961159f06e98e8-17" target="QW1ojJMR4eeIhC1YiXe4-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-18" value="Retrieval Model" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="480" y="120" width="270" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-19" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;_________________________________&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;BM25 + re-ranking. Two separate tokenization steps (?). BM25 delivers a lexicographic similarity score.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Reranking is done with &lt;i&gt;paraphrase-MiniLM-L6-v2&lt;/i&gt; - provided the best evidence ranking for downstream fact verification, essentially delivering a semantic similarity score&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;For decomposed top k evidence is picked per each decomposed element of the claim&lt;br&gt;&lt;br&gt;For original claim, some bigger number is picked to make it comparable&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="QW1ojJMR4eeIhC1YiXe4-18" vertex="1">
+          <mxGeometry y="26" width="270" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-27" value="NLI Task (Veracity Prediction)" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="1300" y="170" width="500" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-28" value="&lt;ul&gt;&lt;li&gt;Constitutes a classification task in principle, using claim, query (question) and evidence altogether as input and a label as output&lt;/li&gt;&lt;li&gt;Notebooks:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Our attempt:&amp;nbsp;Alex-Attempt-ModernBERT-Fine-Tuning-NLI.ipynb&lt;/li&gt;&lt;li&gt;Our attempt:&amp;nbsp;Alex-test_roberta-base_training_quantemp.ipynb&lt;/li&gt;&lt;li&gt;Organizers: finqa_roberta_nli_training_quantemp.ipynb&lt;/li&gt;&lt;li&gt;Organizers: oracle_roberta_mnli_quantemp_ipunb&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="QW1ojJMR4eeIhC1YiXe4-27" vertex="1">
+          <mxGeometry y="26" width="500" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="QW1ojJMR4eeIhC1YiXe4-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-47" value="Ideas for Retrieval Model" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="450" y="490" width="330" height="280" as="geometry">
+            <mxRectangle x="450" y="490" width="190" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-36" value="&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;(Our idea) As a preliminary step (before retrieval steps), use chatGPT to normalize the evidence and the claims, creating clearer texts for the downstream tasks. Motivation given by the Task 2 paper. Hopefully this will induce numerical reasoning&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;Different Reranking algorithms (&lt;i&gt;reranker&lt;/i&gt; package from answerdotai),&lt;/li&gt;&lt;li&gt;ModernBERT reranker&amp;nbsp;&lt;/li&gt;&lt;li&gt;Bigger emphasis on the numerical reasoning side of things:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Reranker fine-tuned on FinQA?&lt;/li&gt;&lt;li&gt;LLM reasoning reranker?&lt;/li&gt;&lt;li&gt;MathBERT and NumBERT usage for reranking?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Potentially learn re-ranking together with the NLI task?&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QW1ojJMR4eeIhC1YiXe4-47" vertex="1">
+          <mxGeometry y="26" width="330" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.435;entryY=0.409;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=12 12;" parent="1" source="QW1ojJMR4eeIhC1YiXe4-47" target="QW1ojJMR4eeIhC1YiXe4-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-50" value="Possible joint model which learns the ranking &amp;amp; the NLI task together" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="510" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-52" value="NLI Task (Veracity Prediction)" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="1300" y="480" width="500" height="284" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-53" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a PLETHORA of models are possible here. Few new things to know and try out:&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;ModernBERT vanilla, ModernBERT finetuned on FinQA. Key point here is that it allows for longer context, which means more evidences to put in&lt;/li&gt;&lt;li&gt;Using stuff from NumBERT (already at the previous step) into ModernBERT&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;How to account for the unbalanced dataset?&lt;br&gt;&lt;/li&gt;&lt;li&gt;We&#39;ll have to deal with the additional languages too&lt;/li&gt;&lt;li&gt;Can we put the NLI step together with the reranking one and have two heads (say) - incorporating the downstream task in the ranking one already.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="QW1ojJMR4eeIhC1YiXe4-52" vertex="1">
+          <mxGeometry y="26" width="500" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;dashPattern=12 12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="QW1ojJMR4eeIhC1YiXe4-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="694" as="sourcePoint" />
+            <mxPoint x="1090.066666666667" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-59" value="Train/Val/Test Data" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="260" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="QW1ojJMR4eeIhC1YiXe4-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="360" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QW1ojJMR4eeIhC1YiXe4-60" value="&lt;div&gt;&lt;span style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;text-align: center;&quot;&gt;- Input: Concatenate Claim + Query(ies) + evidence(s)&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: center;&quot;&gt;- Output: Label&lt;br&gt;&lt;br&gt;Dataset: &lt;i&gt;train_claimdecomp_&lt;br&gt;evidence_question_&lt;br&gt;mapping.json&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="280" width="130" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

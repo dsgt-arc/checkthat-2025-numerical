@@ -1,0 +1,29 @@
+data:
+  dir: "/storage/coda1/p-dsgt_clef2025/0/shared/checkthat-2025-numerical-data"
+  # Decomposed Claims with 3 subclaims each and label, metadata
+  claims_train: "decomposition/train_claims_decomposed.json"
+  claims_val: "decomposition/val_claims_decomposed.json"
+
+  # RAW Evidence Corpus that is used for the retrieval
+  evidence_corpus: "raw_data/corpus_evidence_unified.json"
+
+  # Retriever builds an index of the evidence corpus here
+  retriever_index_path: "pyterrier_index2/"
+  # Reranking Results
+  ir_evidence_corpus: "reranking/ir_evidence_corpus.csv"
+  reranked_results_train: "reranking/reranked_results_train_mixedbread_all_questions.csv"
+  reranked_results_val: "reranking/reranked_results_val_mixedbread_all_questions.csv"
+
+reranking:
+  gpu: True # To use GPU for the reranking or not
+  model_name_cpu: "flashrank"  # To use for CPU inference
+  model_name_gpu: "mixedbread-ai/mxbai-rerank-large-v2" #https://huggingface.co/cross-encoder
+  model_type_gpu: "cross-encoder" # To use for GPU inference
+  batch_size: 1 # GPU Only. Increase that when on PACE and using GPU (or if you have a good GPU card)
+  k: 100 #How many to keep after retrieval
+  clean_index: True
+  wmodel: "BM25" #Retrieval model
+  remove_questions: False #To keep everything, just use False
+
+
+  

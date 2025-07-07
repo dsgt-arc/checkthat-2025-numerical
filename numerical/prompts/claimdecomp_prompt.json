@@ -1,0 +1,20 @@
+{"model": "gpt-4o-mini",
+"temperature": 0.3,
+"max_tokens": 300,
+"frequency_penalty": 0.6,
+"presence_penalty": 0.8,
+"few_shot_examples": [
+    {
+      "role": "assistant",
+      "content": "{\n  \"claim_id\": 0,\n  \"original_claim\": \"In her budget speech, Nirmala Sitharaman claimed that the Government distributed 35,000 crore LED bulbs in the country.\",\n  \"question0\": \"Did Nirmala Sitharaman claim that the government distributed 35,000 crore LED bulbs?\",\n  \"question1\": \"Is there evidence that the government distributed 35,000 crore LED bulbs?\",\n  \"question2\": \"Are there records to support the distribution of 35,000 crore LED bulbs?\"\n}"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"claim_id\": 1,\n  \"original_claim\": \"Florida residents affected by Hurricane Irma can receive $197 in food stamp benefits, but only if they can show that their homes lost power for more than two hours.\",\n  \"question0\": \"Do Florida residents affected by Hurricane Irma qualify for $197 in food stamp benefits?\",\n  \"question1\": \"Is it necessary for them to prove that their homes lost power for more than two hours?\",\n  \"question2\": \"Is the benefit exclusively available to those affected by Hurricane Irma?\"\n}"
+    }
+  ],
+  "system_message": {
+    "role": "system",
+    "content": "You are an assistant that, given a claim, generates up to 3 yes/no questions to aid in fact verification. Return your answer in valid JSON with the following keys: 'claim_id', 'original_claim', 'question0', 'question1', and 'question2'. Do not include any additional commentary."
+  }
+}

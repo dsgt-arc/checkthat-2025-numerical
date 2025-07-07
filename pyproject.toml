@@ -1,0 +1,55 @@
+[project]
+name = "checkthat-numerical"
+version = "0.0.1"
+authors = [{ name = "Alex Pramov", email = "apramov3@gatech.edu"},
+           { name = "Maximilian Heil", email = "mheil7@gmail.edu"}
+           ]
+description = "DS@GT CheckThat! 2025 Fact-Checking Numerical Claims"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.urls]
+Homepage = "https://github.com/dsgt-kaggle-clef/checkthat-2025-numerical"
+
+[tool.poetry]
+name = "checkthat-numerical"
+version = "0.0.1"
+description = "Numerical fact-checking"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "*"
+rerankers = {extras = ["rankllm"], version = "^0.9.1.post1"}
+matplotlib = "*"
+scikit-learn = "*"
+numpy = "^2.0"
+polars = "*"
+pillow = "*"
+pytz = "*"
+requests = "*"
+safetensors = "*"
+scipy = "*"
+sentence-transformers = "*"
+seaborn = "*"
+tokenizers = "*"
+tqdm = "*"
+tiktoken = "*"
+ruff = "*"
+peft = "^0.15.1"
+transformers = "^4.51.3"
+python-terrier = "^0.13.0"
+umap-learn = "^0.5.7"
+pacmap = "^0.8.0"
+huggingface-hub = "^0.30.1"
+openai = "^1.70.0"
+python-dotenv = "^1.1.0"
+wandb = "^0.19.9"
+xlsxwriter = "^3.2.3"
+hf-xet = "^1.0.4"
+pandas = "^2.2.3"
+blobfile = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

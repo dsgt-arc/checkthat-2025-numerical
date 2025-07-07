@@ -1,0 +1,38 @@
+data:
+  dir: "/storage/coda1/p-dsgt_clef2025/0/shared/checkthat-2025-numerical-data"
+  reranked_results_train: "reranking/compiled_result_train.csv"
+  reranked_results_val: "reranking/compiled_result_val.csv"
+  fine_tuned_model_path: fine_tuned_models
+
+encoder_model: 
+  name: "modernbert-large" # (uf-aice-lab/math-roberta, modernbert-large, roberta-large)
+  TOKENIZERS_PARALLELISM: false # Supress tokenizing in parallel because we will fork our process later when dataloader is created
+  add_special_tokens: true
+  padding: "max_length"
+  truncation: true
+  return_attention_mask: true
+  return_tensors: "pt"
+  pad_to_max_length: true
+  max_length: 2048
+  r2l: false # Tokenization (True, False)
+  batch_size: 20 # only used for 00-eda-claims
+  hidden_dim: 1024 # depends on the model (1024 for math-roberta, 1024 for modernbert-large, 1024 for roberta-large)
+  freeze_encoder: None # Strings (None, "first_5_layers", "all")
+  dropout_ratio: 0.1
+  mlp_dim: 768
+  lora_rank: 4  # (recommended: 4 - 8)
+  lora_alpha: 8 # (recommended: 2x lora_rank)
+
+train:
+  train_test_split: 0.8
+  top_n_evidences: 5
+  batch_size: 16 # used for 02-nli
+  dataloader_num_workers: 0 # Number of subprocesses to use for data loading
+  seed: 42
+  epochs: 10
+  learning_rate: 0.00002
+  eps: 0.00000001
+  early_stopping_patience: 2
+  rounding_metrics: 4
+  warmup_steps: 0
+  step_per: "epoch" # ("epoch", "batch", "venktesh" -> no steps)
